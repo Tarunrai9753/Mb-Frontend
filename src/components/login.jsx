@@ -12,7 +12,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/", { email, password })
+      .post("https://mb-backend-37on.onrender.com/", { email, password })
       .then((result) => {
         console.log(result);
         if (result.data === "success") {
